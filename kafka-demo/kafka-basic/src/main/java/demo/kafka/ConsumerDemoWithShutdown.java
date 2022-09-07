@@ -30,7 +30,7 @@ public class ConsumerDemoWithShutdown {
         properties.setProperty(ConsumerConfig.GROUP_ID_CONFIG, groupID);
         properties.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
 
-        //create comsumer
+        //create consumer
 
         KafkaConsumer<String, String> consumer = new KafkaConsumer<String, String>(properties);
         final Thread mainThread = Thread.currentThread();
